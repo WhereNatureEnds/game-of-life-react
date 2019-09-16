@@ -1,5 +1,6 @@
 body {
-  background-image: url(http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/squares.png) 
+  background: linear-gradient(#e66465, #9198e5); 
+  font-family: Arial
 }
   
 .box {
