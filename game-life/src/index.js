@@ -134,6 +134,42 @@ class Main extends React.Component {
         clearInterval(this.intervalId);
     }
 
+    slow = () => {
+        this.speed = 1000;
+        this.playButton();
+    }
+
+    fast = () => {
+        this.speed = 100;
+        this.playButton();
+    }
+
+    clear = () => {
+        var grid = Array(this.rows).fill().map(() => Array(this.cols).fill(false));
+        this.setState({
+            gridFull: grid,
+            generation: 0
+        })
+    }
+
+    gridSize = (size) => {
+        switch (size) {
+            case '1':
+                this.cols = 20;
+                this.rows = 10;
+                break;
+            case '2':
+                this.cols = 20;
+                this.rows = 10;
+                break;
+            case '3':
+                this.cols = 20;
+                this.rows = 10;
+                break;
+        }
+        this.clear();
+    }
+
 
 
 
